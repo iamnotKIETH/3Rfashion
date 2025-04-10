@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+        <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="icon" type="image/png" href="Media/Logo.png">
+        <title>Thời trang 3R</title>
+    </head>
+
+    <body>
+    <!-- Header -->
+        <header>
+            <nav>
+                <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden>
+                <label for="nav-toggle" class="hamburger">☰</label>
+                <ul class="nav-links">
+                <li><img class="navimg" src="Media/WideLogo.png" alt="Logo"></li>
+                <li><a class="active" href="index.html">Trang chủ</a></li>
+                <li><a href="products.html">Sản phẩm</a></li>
+                <li><a href="cart.html">Giỏ hàng</a></li>
+                <li><a href="contact.html">Liên hệ</a></li>
+                <li class="account"><a href="account.html">Tài khoản</a></li>
+                </ul>
+            </nav>
+        </header>
+
+    <!-- Banner -->
+        <section style="margin-bottom:200px;">
+            <div class="bannercover" style="background-image: url(Media/HPcover.jpg);">
+                <p class="oswald-hpslogan" style="position: absolute; top: 205px; right: 145px; font-size: 35px;"><strong>ĐẸP TỪNG CHI TIẾT.<br>PHONG CÁCH TỪNG BƯỚC ĐI.</strong></p>
+                <p class="oswald-hpslogan" style="position: absolute; top: 340px; right: 400px; font-size: 16px;"><a class="bannerbutton" href="#navigation"><strong>MUA SẮM NGAY &#10549</strong></a></p>
+            </div>
+        </section>
+
+    <!-- Navigation -->
+        <section id="navigation">
+            <div style="text-align: center; font-size: 40px;">
+                <p class="major-mono-display-regular"><strong>chọn một dòng sản phẩm</strong></p>
+            </div>
+            <br><br><br>
+            <ul class="selection">
+                <a href="products.html#men"> <li>
+                    <img src="Media/MENS.webp">
+                    <p class="oswald-navigation">NAM</p>
+                </li> </a>
+                <a href="products.html#women"> <li>
+                    <img src="Media/WOMENS.webp">
+                    <p class="oswald-navigation">NỮ</p>
+                </li> </a>
+                <a href="products.html#accessory"> <li>
+                    <img src="Media/ACCESSORIES.webp">
+                    <p class="oswald-navigation">PHỤ KIỆN</p>
+                </li> </a>
+            </ul>            
+        </section>
+
+    <!-- Chatbox -->
+        <section class="chatbox">
+            <div class="chatbox-wrapper">
+                <div class="chatbox-toggle">
+                    <i class='bx bx-chat'></i>
+                </div>
+                <div class="chatbox-message-wrapper">
+                    <div class="chatbox-message-header">
+                        <div class="chatbox-message-profile">
+                            <img src="Media/AI.webp" class="chatbox-message-image">
+                            <div>
+                                <h1 class="chatbox-message-name">Trò chuyện</h1>
+                                <p class="chatbox-message-status">Với công cụ "AI" hiện đại nhất</p>
+                            </div>
+                        </div>
+                        <div class="chatbox-message-dropdown">
+                            <i class='bx bx-dots-vertical-rounded chatbox-message-dropdown-toggle'>
+                                <ul class="chatbox-message-dropdown-menu">
+                                    <li>
+                                        <a href="#">Search</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Report</a>
+                                    </li>
+                                </ul>
+                            </i>
+                        </div>
+                    </div>
+                    <div class="chatbox-message-content">
+                        <h4 class="chatbox-message-no-message">Bạn cần giúp gì?</h4>
+                    </div>
+                    <div class="chatbox-message-bottom">
+                        <form action="#" class="chatbox-message-form">
+                            <textarea rows="1" placeholder="Type message..." class="chatbox-message-input"></textarea>
+                            <button type="submit" class="chatbox-message-submit"><i class='bx bx-send'></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="chatbox.js"></script>
+
+    <!-- Footer -->
+        <footer>
+            <p>© 2025 3R Fashion. All rights reserved.</p>
+        </footer>
+    </body>
+</html>

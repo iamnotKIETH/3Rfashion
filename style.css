@@ -1,0 +1,863 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #333;
+}
+
+section {
+    margin: 0;
+}
+
+footer {
+    background-color: rgb(11, 11, 11);
+    color: white;
+    height: 100px;
+    text-align: center;
+    bottom: 0;
+}
+
+/* FONTS */
+
+.oswald-hpslogan {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.oswald-navigation {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 350;
+    font-style: normal;
+}
+
+.major-mono-display-regular {
+    font-family: "Major Mono Display", monospace;
+    font-weight: 0;
+    font-style: normal;
+}
+
+.charm-regular {
+    font-family: "Charm", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.charm-bold {
+    font-family: "Charm", cursive;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.quicksand-sections {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.xanh-mono-regular {
+    font-family: "Xanh Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.xanh-mono-regular-italic {
+    font-family: "Xanh Mono", monospace;
+    font-weight: 400;
+    font-style: italic;
+}
+
+/* NAVIGATION BAR */
+
+nav {
+    background-color: #333;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li a {
+    display: block;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+    transition: 500ms;
+}
+
+.nav-links li a:hover {
+    background-color: #111;
+}
+
+.nav-links li a.active {
+    background-color: white;
+    color: black;
+}
+
+.nav-links li a.active:hover {
+    background-color: #111;
+    color: white;
+}
+
+.navimg {
+    display: block;
+    margin: 10px;
+    padding: 0;
+    max-height: 44px;
+    max-width: 152px;
+}
+
+.nav-links .account {
+    margin-left: auto;
+}
+
+.hamburger {
+    display: none;
+    font-size: 30px;
+    color: white;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+@media (max-width: 699px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+    }
+
+    #nav-toggle:checked + .hamburger + .nav-links {
+        display: flex;
+    }
+
+    .nav-links li {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .nav-links li a {
+        width: 100%;
+        padding: 16px;
+        text-align: left;
+    }
+
+    .navimg {
+        margin: 10px 16px;
+    }
+
+    .nav-links .account {
+        margin-left: 0;
+    }
+}
+
+/* BANNER / HERO */
+
+.bannercover {
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    height: 520px;
+}
+
+.bannerbutton {
+    background-color: rgb(51, 51, 51, 1);
+    color: #ffffffd7;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 10px;
+    text-decoration: none;
+    transition: 500ms;
+}
+
+.bannerbutton:hover {
+    background-color: rgb(51, 51, 51, 0);
+    color: #000000;
+}
+
+@media (max-width: 1080px) {
+    .bannercover {
+        display: none;
+    }
+}
+
+/* SELECTION */
+
+.selection {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+ul.selection a {
+    text-decoration: none;
+}
+ul.selection img {
+    object-fit: cover;
+    height: 500px;
+    width: 250px;
+    transition: 500ms;
+}
+
+ul.selection a:hover img {
+    opacity: 0.45;
+}
+
+ul.selection p.oswald-navigation {
+    font-size: 40px;
+    text-align: center;
+    position: relative;
+    top: -335px;
+    color: rgb(0, 0, 0, 0);
+    transition: 500ms;
+}
+
+ul.selection a:hover p.oswald-navigation {
+    color: rgb(0, 0, 0, 1);
+}
+
+@media (max-width: 969px) {
+    .selection {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* PRODUCTS */
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 30px;
+    max-width: 1200px;
+    box-sizing: border-box;
+}
+
+li.product {
+    margin: 10px;
+    padding: 10px;
+    display: inline-block;
+}
+
+ul.products li {
+    background-color: #ffffff;
+    width: 260px;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+ul.products li img {
+    object-fit: cover;
+    width: 100%;
+    height: 320px;
+    border-radius: 4px;
+}
+
+ul.products li p {
+    margin-top: 8px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.4;
+}
+
+@media (max-width: 1024px) {
+    ul.products li {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    ul.products li {
+        width: 100%;
+        max-width: 320px;
+    }
+}
+
+/* CART */
+
+.add-to-cart {
+    background-color: blue;
+    color: white;
+    padding: 0.5em;
+}
+
+#cart-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.cart-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 0.5em;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 1.5rem;
+    width: 100%;
+    max-width: 700px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.cart-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+  
+.cart-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+  
+.cart-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+  
+.cart-price {
+    font-size: 1.2rem;
+    color: #28a745;
+    text-align: left;
+}  
+
+.cart-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+  }
+  
+.cart-buttons button {
+    padding: 0.8rem 2rem;
+    font-size: 1.1rem;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+  
+#checkout-btn {
+    background-color: #28a745;
+}
+  
+#checkout-btn:hover {
+    background-color: #218838;
+}
+  
+#clear-cart-btn {
+    background-color: #dc3545;
+}
+  
+#clear-cart-btn:hover {
+    background-color: #c82333;
+}  
+  
+@media (max-width: 480px) {
+    .cart-item {
+        padding: 1rem;
+    }
+}
+  
+/* CONTACTS */
+
+.contact-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 30px;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.contact-form {
+    flex: 1;
+    align-self: center;
+    min-width: 300px;
+    max-width: 400px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 100px;
+}
+
+.contact-text {
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px;
+}
+
+@media (max-width: 768px) {
+    .contact-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-form,
+    .contact-text {
+        max-width: 100%;
+    }
+
+    .contact-form label {
+        text-align: left;
+    }
+}
+
+/* ACCOUNT */
+
+.account-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 30px;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.account-form {
+    flex: 1;
+    align-self: center;
+    min-width: 300px;
+    max-width: 400px;
+}
+
+.account-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.account-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .account-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .account-form,
+    .account-text {
+        max-width: 100%;
+    }
+
+    .account-form label {
+        text-align: left;
+    }
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #2a7ae4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #1e5ec9;
+}
+
+@media (max-width: 444px) {
+    .container {
+        padding: 5px;
+    }
+}
+
+
+
+/* mấy cái xàm lồn của hoàng nhật */
+
+
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body, h1, h2, h3, h4, p,
+figure, blockquote, dl, dd {
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+.boxchat ul[role='list'],
+.boxchat ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+.boxchat h1, h2, h3, h4,
+input, label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+.boxchat h1 , h2,
+.boxchat h3, h4 {
+  text-wrap: balance;
+}
+
+
+/* Make images easier to work with */
+.boxchat img,
+.boxchat picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+.boxchat input, button,
+.boxchat textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+.boxchat textarea:not([rows]) {
+  min-height: 10rem;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 8ex;
+}
+
+
+/* GLOBAL STYLES */
+:root {
+    --blue: #335dff;
+    --grey: #F5F5F5;
+    --grey-d-1: #DDD;
+    --grey-d-2: #EEE;
+    --grey-d-3: #888;
+    --white: #FFF;
+    --dark: #222;
+}
+
+
+/* CHATBOX */
+.chatbox-wrapper {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 4rem;
+    height: 4rem;
+}
+
+.chatbox-toggle {
+    width: 100%;
+    height: 100%;
+    background: #333;
+    color: var(--white);
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.chatbox-toggle:active {
+    transform: scale(.9);
+}
+
+.chatbox-message-wrapper {
+    position: absolute;
+    bottom: calc(100% + 1rem);
+    right: 0;
+    width: 420px;
+    border-radius: .5rem;
+    overflow: hidden;
+    box-shadow: .5rem .5rem 2rem rgba(0, 0, 0, .1);
+    transform: scale(0);
+    transform-origin: bottom right;
+    transition: .2s;
+}
+
+.chatbox-message-wrapper.show {
+    transform: scale(1);
+}
+
+.chatbox-message-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--white);
+    padding: .75rem 1.5rem;
+}
+
+.chatbox-message-profile {
+    display: flex;
+    align-items: center;
+    grid-gap: .5rem;
+}
+
+.chatbox-message-image {
+    width: 3rem;
+    height: 3rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.chatbox-message-name {
+    margin: 0;
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.chatbox-message-status {
+    margin: 0;
+    font-size: .875rem;
+    color: var(--grey-d-3)
+}
+
+.chatbox-message-dropdown {
+    position: relative;
+}
+
+.chatbox-message-dropdown-toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.25rem;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.chatbox-message-dropdown-toggle:hover {
+    background: var(--grey);
+}
+
+.chatbox-message-dropdown-menu {
+    list-style: none;
+    margin: 0;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: var(--white);
+    padding: .5rem 0;
+    width: 120px;
+    box-shadow: .25rem .25rem 1.5rem rgba(0, 0, 0, .1);
+    transform: scale(0);
+    transform-origin: top right;
+    transition: .2s;
+}
+
+.chatbox-message-dropdown-menu.show {
+    transform: scale(1);
+}
+
+.chatbox-message-dropdown-menu a {
+    font-size: .875rem;
+    font-weight: 500;
+    color: var(--dark);
+    text-decoration: none;
+    padding: .5rem 1rem;
+    display: block;
+}
+
+.chatbox-message-dropdown-menu a:hover {
+    background: var(--grey);
+}
+
+.chatbox-message-content {
+    background: var(--grey);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    grid-row-gap: 1rem;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.chatbox-message-item {
+    width: 90%;
+    padding: 1rem;
+}
+
+.chatbox-message-item.sent {
+    align-self: flex-end;
+    background: var(--blue);
+    color: var(--white);
+    border-radius: .75rem 0 .75rem .75rem;
+}
+
+.chatbox-message-item.received {
+    background: var(--white);
+    border-radius: 0 .75rem .75rem .75rem;
+    box-shadow: .25rem .25rem 1.5rem rgba(0, 0, 0, .05);
+}
+
+.chatbox-message-item-time {
+    float: right;
+    font-size: .75rem;
+    margin-top: .5rem; 
+}
+
+.chatbox-message-bottom {
+    background: var(--white);
+    padding: .75rem 1.5rem;
+}
+
+.chatbox-message-form {
+    display: flex;
+    align-items: center;
+    background: var(--grey);
+    border-radius: .5rem;
+    padding: .5rem 1.25rem;
+}
+
+.chatbox-message-input {
+    background: transparent;
+    outline: none;
+    border: none;
+    resize: none;
+    scrollbar-width: none;
+    width: 20rem;
+
+}
+
+.chatbox-message-input::-webkit-scrollbar {
+    display: none;
+}
+
+.chatbox-message-submit {
+    font-size: 1.25rem;
+    color: #333;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.chatbox-message-no-message {
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+/* BREAKPOINTS */
+@media screen and (max-width: 576px) {
+    .chatbox-message-wrapper {
+        width: calc(100vw - 2rem);
+    }
+    .chatbox-wrapper {
+        bottom: 1rem;
+        right: 1rem;
+    }
+}

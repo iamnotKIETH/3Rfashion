@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Major+Mono+Display&family=Oswald:wght@200..700&family=Quicksand:wght@300..700&family=Xanh+Mono:ital@0;1&display=swap" rel="stylesheet">
+        <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="icon" type="image/png" href="Media/Logo.png">
+        <title>Thời trang 3R</title>
+    </head>
+
+    <body>
+    <!-- Header -->
+        <header>
+            <nav>
+                <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden>
+                <label for="nav-toggle" class="hamburger">☰</label>
+                <ul class="nav-links">
+                <li><img class="navimg" src="Media/WideLogo.png" alt="Logo"></li>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a class="active" href="products.html">Sản phẩm</a></li>
+                <li><a href="cart.html">Giỏ hàng</a></li>
+                <li><a href="contact.html">Liên hệ</a></li>
+                <li class="account"><a href="account.html">Tài khoản</a></li>
+                </ul>
+            </nav>
+        </header>
+
+    <!-- Banner -->
+        <section>
+            <div class="bannercover" style="background-image: url(Media/productbanner.webp);">
+                <p class="charm-bold" style="position: absolute; top: 90px; right: 70px; font-size: 39px;">MẶC ĐẸP LÀ ĐẸP MẶT.</p>
+            </div>
+        </section>
+        <br><br><br><br><br>
+
+
+    <!-- Products -->
+        <p style="text-align: center;">________________________________________</p><br>
+    
+        <section>
+            <p class="xanh-mono-regular-italic" style="margin: 0; text-align: center; font-size: 60px;">Nam</p>
+            <p class="quicksand-sections" style="margin: 0; text-align: center; font-size: 20px;" id="men">Phong độ, trẻ trung, lịch lãm.</p>
+            
+            <ul class="products">
+                <li><img src="Products/M1.webp" alt="SP1"><p>Áo khoác gió</p><p><strong>280.000đ</strong></p> 
+                    <button class="add-to-cart-btn" data-id="product1">Thêm vào giỏ hàng</button></li>
+                <li><img src="Products/M2.webp" alt="SP2"><p>Set đồ nam</p><p><strong>920.000đ</strong></p>
+                    <button class="add-to-cart-btn" data-id="product2">Thêm vào giỏ hàng</button></li>
+                <li><img src="Products/M3.jpg" alt="SP3"><p>Áo khoác denim</p><p><strong>280.000đ</strong></p>
+                    <button class="add-to-cart-btn" data-id="product3">Thêm vào giỏ hàng</button></li>
+                <li><img src="Products/M4.webp" alt="SP4"><p>Áo hoodie</p><p><strong>230.000đ</strong></p>
+                    <button class="add-to-cart-btn" data-id="product4">Thêm vào giỏ hàng</button></li>
+            </ul>
+            <ul class="products">
+                <li><img src="Products/M5.jpg" alt="SP5"><p>Quần kaki</p><p><strong>267.000đ</strong></p>
+                    <button class="add-to-cart-btn" data-id="product5">Thêm vào giỏ hàng</button></li>
+                <li><img src="Products/M6.jpg" alt="SP6"><p>Quần tây</p><p><strong>330.000đ</strong></p>
+                    <button class="add-to-cart-btn" data-id="product6">Thêm vào giỏ hàng</button></li>
+                <li><img src="Products/M7.jpg" alt="SP7"><p>Quần đùi</p><p><strong>267.000đ</strong></p>
+                    <button class="add-to-cart-btn" data-id="product7">Thêm vào giỏ hàng</button></li>
+                <li><img src="Products/M8.jpg" alt="SP8"><p>Quần thun</p><p><strong>251.000đ</strong></p>
+                    <button class="add-to-cart-btn" data-id="product8">Thêm vào giỏ hàng</button></li>
+            </ul>
+        </section>
+
+        <p style="text-align: center;">________________________________________</p><br>
+
+        <section>
+            <p class="xanh-mono-regular-italic" style="margin: 0; text-align: center; font-size: 60px;">Nữ</p>
+            <p class="quicksand-sections" style="margin: 0; text-align: center; font-size: 20px;" id="women">Xinh đẹp, tươi tắn, dịu dàng.</p>
+            
+            <ul class="products">
+                <li><img src="Products/W1.jpg" alt="SP1"><p>Áo sơ mi trắng thanh lịch</p><p><strong>310.000đ</strong></p>
+                    <button class="add-to-cart-btn" data-id="product9">Thêm vào giỏ hàng</button></li>
+                <li><img src="Products/W2.jpg" alt="SP2"><p>Áo thun đen</p><p><strong>290.000đ</strong></p>
+                    <button class="add-to-cart-btn" data-id="product10">Thêm vào giỏ hàng</button></li>
+                <li><img src="Products/W3.jpg" alt="SP3"><p>Áo blouse bèo nhún</p><p><strong>287.000đ</strong></p>
+                    <button class="add-to-cart-btn" data-id="product11">Thêm vào giỏ hàng</button></li>
+                <li><img src="Products/W4.jpg" alt="SP4"><p>Áo sơ mi thắt eo</p><p><strong>330.000đ</strong></p>
+                    <button class="add-to-cart-btn" data-id="product12">Thêm vào giỏ hàng</button></li>
+            </ul>
+            <ul class="products">
+                <li><img src="Products/W5.jpg" alt="SP5"><p>Đầm trắng công chúa</p><p><strong>400.000đ</strong></p>
+                    <button class="add-to-cart-btn" data-id="product13">Thêm vào giỏ hàng</button></li>
+                <li><img src="Products/W6.jpg" alt="SP6"><p>Chân váy xòe đen</p><p><strong>330.000đ</strong></p>
+                    <button class="add-to-cart-btn" data-id="product14">Thêm vào giỏ hàng</button></li>
+                <li><img src="Products/W7.jpg" alt="SP7"><p>Chây váy xếp ly</p><p><strong>300.000đ</strong></p>
+                    <button class="add-to-cart-btn" data-id="product15">Thêm vào giỏ hàng</button></li>
+                <li><img src="Products/W8.jpg" alt="SP8"><p>Quần jogger nơ</p><p><strong>324.000đ</strong></p>
+                    <button class="add-to-cart-btn" data-id="product16">Thêm vào giỏ hàng</button></li>
+            </ul>
+        </section>
+
+        <p style="text-align: center;">________________________________________</p><br>
+
+        <section>
+            <p class="xanh-mono-regular-italic" style="margin: 0; text-align: center; font-size: 60px;">Phụ kiện</p>
+            <p class="quicksand-sections" style="margin: 0; text-align: center; font-size: 20px;" id="accessory">Phá cách, độc đáo, tinh tế.</p>
+            
+            <ul class="products">
+                <li><img src="Products/A1.jpg" alt="SP1"><p>Túi xách</p><p><strong>430.000đ</strong></p>
+                    <button class="add-to-cart-btn" data-id="product17">Thêm vào giỏ hàng</button></li>
+                <li><img src="Products/A2.jpg" alt="SP2"><p>Bông tai</p><p><strong>343.000đ</strong></p>
+                    <button class="add-to-cart-btn" data-id="product18">Thêm vào giỏ hàng</button></li>
+                <li><img src="Products/A3.jpg" alt="SP3"><p>Nhẫn cặp</p><p><strong>760.000đ</strong></p>
+                    <button class="add-to-cart-btn" data-id="product19">Thêm vào giỏ hàng</button></li>
+                <li><img src="Products/A4.jpg" alt="SP4"><p>Ví nam</p><p><strong>230.000đ</strong></p>
+                    <button class="add-to-cart-btn" data-id="product20">Thêm vào giỏ hàng</button></li>
+            </ul>
+            <ul class="products">
+                <li><img src="Products/A5.jpg" alt="SP5"><p>Mắt kính</p><p><strong>290.000đ</strong></p>
+                    <button class="add-to-cart-btn" data-id="product21">Thêm vào giỏ hàng</button></li>
+                <li><img src="Products/A6.jpg" alt="SP6"><p>Balo nữ</p><p><strong>320.000đ</strong></p>
+                    <button class="add-to-cart-btn" data-id="product22">Thêm vào giỏ hàng</button></li>
+                <li><img src="Products/A7.jpg" alt="SP7"><p>Vòng tay nữ</p><p><strong>343.000đ</strong></p>
+                    <button class="add-to-cart-btn" data-id="product23">Thêm vào giỏ hàng</button></li>
+                <li><img src="Products/A8.jpg" alt="SP8"><p>Dây nịt nam</p><p><strong>230.000đ</strong></p>
+                    <button class="add-to-cart-btn" data-id="product24">Thêm vào giỏ hàng</button></li>
+            </ul>
+        </section>
+
+        <p style="text-align: center;">________________________________________</p><br>
+
+        <script src="cart.js"></script>
+
+        <br><br>
+
+    <!-- Chatbox -->
+        <section class="chatbox">
+            <div class="chatbox-wrapper">
+                <div class="chatbox-toggle">
+                    <i class='bx bx-chat'></i>
+                </div>
+                <div class="chatbox-message-wrapper">
+                    <div class="chatbox-message-header">
+                        <div class="chatbox-message-profile">
+                            <img src="Media/AI.webp" class="chatbox-message-image">
+                            <div>
+                                <h1 class="chatbox-message-name">Trò chuyện</h1>
+                                <p class="chatbox-message-status">Với công cụ "AI" hiện đại nhất</p>
+                            </div>
+                        </div>
+                        <div class="chatbox-message-dropdown">
+                            <i class='bx bx-dots-vertical-rounded chatbox-message-dropdown-toggle'>
+                                <ul class="chatbox-message-dropdown-menu">
+                                    <li>
+                                        <a href="#">Search</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Report</a>
+                                    </li>
+                                </ul>
+                            </i>
+                        </div>
+                    </div>
+                    <div class="chatbox-message-content">
+                        <h4 class="chatbox-message-no-message">Bạn cần giúp gì?</h4>
+                    </div>
+                    <div class="chatbox-message-bottom">
+                        <form action="#" class="chatbox-message-form">
+                            <textarea rows="1" placeholder="Type message..." class="chatbox-message-input"></textarea>
+                            <button type="submit" class="chatbox-message-submit"><i class='bx bx-send'></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="chatbox.js"></script>
+
+    <!-- Footer -->
+        <footer>
+            <p>© 2025 3R Fashion. All rights reserved.</p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="icon" type="image/png" href="Media/Logo.png">
+        <title>Thời trang 3R</title>
+    </head>
+
+    <body>
+    <!-- Header -->
+        <header>
+            <nav>
+                <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden>
+                <label for="nav-toggle" class="hamburger">☰</label>
+                <ul class="nav-links">
+                <li><img class="navimg" src="Media/WideLogo.png" alt="Logo"></li>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="products.html">Sản phẩm</a></li>
+                <li><a class="active" href="cart.html">Giỏ hàng</a></li>
+                <li><a href="contact.html">Liên hệ</a></li>
+                <li class="account"><a href="account.html">Tài khoản</a></li>
+                </ul>
+            </nav>
+        </header>
+        <br>
+
+    <!-- Cart -->
+        <section style="min-height: 75vh;">
+            <br><br>
+            <div class="container">
+                <h2 style="font-size: 40px;">Giỏ hàng</h2>
+                <br>
+                <div id="cart-container"></div>
+                <br>
+                <div class="cart-buttons">
+                    <button id="clear-cart-btn">Xóa giỏ hàng</button>
+                    <button id="checkout-btn">Thanh toán</button>
+                </div>              
+                <script src="cart.js"></script>
+            </div>
+        </section>
+        
+    <!-- Chatbox -->
+    <section class="chatbox">
+        <div class="chatbox-wrapper">
+            <div class="chatbox-toggle">
+                <i class='bx bx-chat'></i>
+            </div>
+            <div class="chatbox-message-wrapper">
+                <div class="chatbox-message-header">
+                    <div class="chatbox-message-profile">
+                        <img src="Media/AI.webp" class="chatbox-message-image">
+                        <div>
+                            <h1 class="chatbox-message-name">Trò chuyện</h1>
+                            <p class="chatbox-message-status">Với công cụ "AI" hiện đại nhất</p>
+                        </div>
+                    </div>
+                    <div class="chatbox-message-dropdown">
+                        <i class='bx bx-dots-vertical-rounded chatbox-message-dropdown-toggle'>
+                            <ul class="chatbox-message-dropdown-menu">
+                                <li>
+                                    <a href="#">Search</a>
+                                </li>
+                                <li>
+                                    <a href="#">Report</a>
+                                </li>
+                            </ul>
+                        </i>
+                    </div>
+                </div>
+                <div class="chatbox-message-content">
+                    <h4 class="chatbox-message-no-message">Bạn cần giúp gì?</h4>
+                </div>
+                <div class="chatbox-message-bottom">
+                    <form action="#" class="chatbox-message-form">
+                        <textarea rows="1" placeholder="Type message..." class="chatbox-message-input"></textarea>
+                        <button type="submit" class="chatbox-message-submit"><i class='bx bx-send'></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="chatbox.js"></script>
+    
+    <!-- Footer -->
+    <footer style="bottom: 0;">
+        <p>© 2025 3R Fashion. All rights reserved.</p>
+    </footer>
+</body>
+</html>

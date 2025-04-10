@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="icon" type="image/png" href="Media/Logo.png">
+        <title>Thời trang 3R</title>
+    </head>
+
+    <body>
+    <!-- Header -->
+        <header>
+            <nav>
+                <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden>
+                <label for="nav-toggle" class="hamburger">☰</label>
+                <ul class="nav-links">
+                <li><img class="navimg" src="Media/WideLogo.png" alt="Logo"></li>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="products.html">Sản phẩm</a></li>
+                <li><a href="cart.html">Giỏ hàng</a></li>
+                <li><a class="active" href="contact.html">Liên hệ</a></li>
+                <li class="account"><a href="account.html">Tài khoản</a></li>
+                </ul>
+            </nav>
+        </header>
+        <br>
+
+        <section style="min-height: 341px;">
+            <br><br>
+            <div class="container">
+                <h2 style="font-size: 40px;">Liên hệ với chúng tôi</h2>
+                <br>
+                <div class="contact-wrapper">
+                    <form class="contact-form">
+                        <div>
+                            <label for="name">Tên</label><br>
+                            <input type="text" id="name" required placeholder="Tên của bạn..">
+                        </div>
+                        <div>
+                            <label for="email">Mật khẩu</label><br>
+                            <input type="email" id="email" required placeholder="vidu@gmail.com..">
+                        </div>
+                        <div>
+                            <label for="message">Lời Nhắn</label><br>
+                            <textarea id="message" required placeholder="Hãy cho chúng tôi ý kiến của bạn.."></textarea>
+                        </div>
+                        <br>
+                        <button type="submit" id="contact-btn">Gửi</button>
+                    </form>
+        
+                    <div class="contact-text">
+                        <p><br>Nếu bạn có câu hỏi gì về chúng tôi, 
+                        hoặc bạn muốn phản ánh một vấn đề mà chúng tôi có thể khắc phục được
+                        thì bạn sẽ được nhận mã giảm giá 15% áp dụng cho tổng đơn hàng của bạn. 
+                        Đặc biệt với người dùng đã đăng kí, bạn sẽ được mã giảm 40% áp dụng cho tổng đơn hàng.</p>
+                    </div>
+                </div>
+                <br>
+                <a href="index.html">Trở về trang chủ</a>
+                <br><br>
+            </div>
+        </section>
+        <script src="misc.js"></script>
+        <br><br>
+
+    <!-- Chatbox -->
+        <section class="chatbox">
+            <div class="chatbox-wrapper">
+                <div class="chatbox-toggle">
+                    <i class='bx bx-chat'></i>
+                </div>
+                <div class="chatbox-message-wrapper">
+                    <div class="chatbox-message-header">
+                        <div class="chatbox-message-profile">
+                            <img src="Media/AI.webp" class="chatbox-message-image">
+                            <div>
+                                <h1 class="chatbox-message-name">Trò chuyện</h1>
+                                <p class="chatbox-message-status">Với công cụ "AI" hiện đại nhất</p>
+                            </div>
+                        </div>
+                        <div class="chatbox-message-dropdown">
+                            <i class='bx bx-dots-vertical-rounded chatbox-message-dropdown-toggle'>
+                                <ul class="chatbox-message-dropdown-menu">
+                                    <li>
+                                        <a href="#">Search</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Report</a>
+                                    </li>
+                                </ul>
+                            </i>
+                        </div>
+                    </div>
+                    <div class="chatbox-message-content">
+                        <h4 class="chatbox-message-no-message">Bạn cần giúp gì?</h4>
+                    </div>
+                    <div class="chatbox-message-bottom">
+                        <form action="#" class="chatbox-message-form">
+                            <textarea rows="1" placeholder="Type message..." class="chatbox-message-input"></textarea>
+                            <button type="submit" class="chatbox-message-submit"><i class='bx bx-send'></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="chatbox.js"></script>
+    
+    <!-- Footer -->
+        <footer>
+            <p>© 2025 3R Fashion. All rights reserved.</p>
+        </footer>
+    </body>
+</html>
