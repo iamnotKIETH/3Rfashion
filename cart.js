@@ -13,7 +13,7 @@ const productData = {
     },
     product2: {
       name: "Set đồ nam",
-      price: "$920.000đ",
+      price: "920.000đ",
       image: "Products/M2.webp"
     },
     product3: {
