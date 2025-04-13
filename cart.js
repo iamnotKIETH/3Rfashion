@@ -204,6 +204,7 @@ const productData = {
     checkoutBtn.addEventListener("click", () => {
       alert("Các món hàng của bạn đang được giao đi. Cảm ơn bạn đã tin tưởng chọn mua sản phẩm của Shop 3R!");
       localStorage.removeItem("cart");
+      window.location.reload();
     });
   }
 
